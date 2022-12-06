@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Almacén de Mensajes"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id="@+id/titulo"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destinatario"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/etiquetaDestinatario"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="phone"
+            android:id="@+id/textoDestinatario"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensaje"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/etiquetaMensaje"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:id="@+id/textoMensaje"
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/etiquetaFecha"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:inputType="datetime"
+            android:id="@+id/textoFecha"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00695C"
+            android:text="Enviar"
+            android:id="@+id/botonEnviar"
+            />
+
+        <ListView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/listaMensajesEnviados"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
